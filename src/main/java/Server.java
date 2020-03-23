@@ -25,7 +25,7 @@ public class Server extends Listener
         server.start();
         server.addListener(this);
         server.getKryo().register(String.class);
-        System.out.println("Server Started on " + System.getenv("PORT"));
+        System.out.println("Server Started on " + port);
     }
     public void connected (Connection c)
     {
